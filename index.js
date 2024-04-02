@@ -1,115 +1,92 @@
-// Integer2
-// var mass=+prompt("massani kiriting: ");
-// window.alert(mass/1000 + ' tonna');
+//for1
+// a=prompt("Enter k: ")*1;
+// b=prompt("Enter n: ")*1;
+// for (let i = 0; i < b; i++) {
+//     console.log(k);
+// }
 
 
-// Integer3
-// var hajm=+prompt("fayl hajmini kiriting: ");
-// window.alert((hajm-hajm%1024)/1024 + ' KB');
+//for2
+// a=prompt("a soni: ");
+// b=prompt("b soni: ");
+// let count = 0; 
+    
+// console.log(  a + " va " + b + " orasidagi sonlar:");
+// for (let i = a; i <= b; i++) {
+//     console.log(i);
+//     count++;
+//  }
+// console.log("Jami sonlar: " + count);
 
-// Integer4
-// var a=+prompt("A: ");
-// var b=+prompt("B: ");
-// window.alert(a/b + " ta kesma mavjud");
+//for3
+// a=prompt("a soni: ");
+// b=prompt("b soni: ");
+// let count = 0; 
+// for (let i = b - 1; i > a; i--) {
+//     console.log(i);
+//     count++;
+//     }
+// console.log("Jami sonlar: " + count);
 
-// Integer5
-// var c=prompt("A: ")*1;
-// var d=prompt("B: ")*1;
-// window.alert(c/d%1 + " qismi ortib qoladi");
+//for4
+// narx=prompt("Konfet narxi: ");
+// console.log("Konfet narxlari: ");
+// for (let i = 1; i <= 10; i++) {
+//     const umumiynarx = narx * i;
+//     console.log(i + " kg: " + umumiynarx);
+// }
 
-// Integer6
-// var son=prompt("ikki xonali sonni kiriting: ")*1;
-// window.alert("o'nliklar xonasi: "+(son-son%10)/10+" birliklar xonasi: "+son%10);
+//for5
+// narx=prompt("Konfet narxi: ");
+// console.log("Konfet narxlari: ");
+// for (let i = 1; i <= 10; i++) {
+//     const weight = i / 10; 
+//     const umumiynarx = narx * weight;
+//     console.log(weight + " kg: " + umumiynarx);
+// }
 
-// Integer7
-// var son=prompt("ikki xonali sonni kiriting: ")*1;
-// window.alert("Raqamlari yig'indisi: "+((son-son%10)/10+son%10));
+//for6
+// narx=prompt("Konfet narxi: ");
+// console.log("Konfet narxlari: ");
+// for (let i = 12; i <= 20; i += 2) {
+//     const weight = i / 10; 
+//     const umumiynarx = narx * weight;
+//     console.log(weight + " kg: " + umumiynarx);
+// }
 
-// Integer8
-// var son=prompt("ikki xonali sonni kiriting: ")*1;
-// window.alert("Natija: "+son%10+(son-son%10)/10);
+//for7
+// a=prompt("a soni: ")*1;
+// b=prompt("b soni: ")*1;
+// let sum = 0;
+// for (let i = a; i <= b; i++) {
+//     sum += i;
+// }
+// console.log("Natija: "+sum);
 
-// Integer9
-// var son=prompt("Uch xonali sonni kiriting: ")*1;
-// window.alert("Yuzlar xonasi: "+(son-son%100)/100);
+//for8
+// a=prompt("a soni: ")*1;
+// b=prompt("b soni: ")*1;
+// let product = 1;
+// for (let i = a; i <= b; i++) {
+//     product *= i;
+// }
+// console.log("Natija: "+product);
 
-// Integer10
-// var son=prompt("Uch xonali sonni kiriting: ")*1;
-// window.alert("Birliklar xonasi: "+son%10+" O'nliklar xonasi: "+(son-son%10)/10+" Yuzlar xonasi: "+(son-son%100)/100);
+//for9
+// a=prompt("a soni: ")*1;
+// b=prompt("b soni: ")*1;
+// let sum = 0;
+// for (let i = a; i <= b; i++) {
+//     sum += i * i;
+// }
+// console.log("Natija: "+sum);
 
-// Integer11
-// var son=prompt("Uch xonali sonni kiriting: ")*1;
-// window.alert("Raqamlari yig'indisi: "+((son-son%10)/10+son%10+(son-son%100)/100));
+//for10
+// n=prompt("n soni: ")*1;
+// let sum = 0;
+// for (let i = 1; i <= n; i++) {
+//     sum += 1/i;
+// }
+// console.log("Natija: "+sum);
 
-
-// Integer12
-// var son=prompt("Uch xonali sonni kiriting: ")*1;
-// var uch=son%10;
-// var ikki=(son%100-son%10)/10;
-// var bir=(son-son%100)/100;
-// window.alert("Natija: "+uch+ikki+bir)
-
-// HOMEWORK
-
-// Integer14
-// var son=prompt("Sonni kiriting: ")*1;
-// var uch=son%10; 
-// var ikki=(son%100-son%10)/10; 
-// var bir=(son-son%100)/100; 
-// window.alert("Natija: "+uch+bir+ikki);
-
-// Integer15
-// var son=prompt("Sonni kiriting: ")*1;
-// var uch=son%10; 
-// var ikki=(son%100-son%10)/10; 
-// var bir=(son-son%100)/100;
-// window.alert("Natija: "+ikki+bir+uch);
-
-// Integer16
-// var son=prompt("Sonni kiriting: ")*1;
-// var uch=son%10; 
-// var ikki=(son%100-son%10)/10; 
-// var bir=(son-son%100)/100;
-// window.alert("Natija: "+bir+uch+ikki);
-
-// Integer17
-// var son=prompt("Sonni kiriting: ")*1;
-// var yuzlar=(son%1000-son%100)/100;
-// window.alert("Natija: "+yuzlar);
-
-// Integer18
-// var son=prompt("Sonni kiriting: ")*1;
-// var minglar=(son-son%1000)/1000;
-// window.alert("Natija: "+minglar);
-
-// Integer19
-// var N=prompt("Sekundlarni kiriting: ")*1;
-// var qoldiq=N%60;
-// var natija=(N-qoldiq)/60;
-// window.alert(natija+" minut utgan");
-
-// Integer20
-// var N=prompt("Sekundlarni kiriting: ")*1;
-// var qoldiq=N%3600;
-// var natija=(N-qoldiq)/3600;
-// window.alert(natija+" soat utgan");
-
-// Integer21
-// var N=prompt("Sekundlarni kiriting: ")*1;
-// var qoldiq=N%60;
-// var natija=(N-qoldiq)/60;
-// window.alert(natija+" minut "+qoldiq + " sekund utgan");
-
-// Integer22
-// var N=prompt("Sekundlarni kiriting: ")*1;
-// var qoldiq=N%3600;
-// var natija=(N-qoldiq)/3600;
-// window.alert(natija+" soat "+qoldiq + " sekund utgan");
-
-// Integer23
-// var N=prompt("Sekundlarni kiriting: ")*1;
-// var soat=(N-N%3600)/3600;
-// var minut=(N%3600-N%60)/60;
-// var sekund=N%60;
-// window.alert(soat+ " soat "+minut+" minut "+sekund + " sekund utgan");
 
