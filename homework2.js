@@ -42,26 +42,30 @@
 // console.log("juft yigindi: "+juft_yigindi);
 // console.log("toq yigindi: "+toq_yigindi);
 
+//998911050316
 
 // task4
 // function operator_aniqla(raqam_kod) {
 //     let operator = "";
+//        raqam_kod=(raqam_kod-raqam_kod%10000000)/10000000+'';
+       
+       
 //     switch (raqam_kod) {
-//         case "90":
-//         case "91":        
+//         case "99890":
+//         case "99891":        
 //             operator = "Beeline";
 //             break;
-//         case "94":
-//         case "95":
-//         case "93":
+//         case "99894":
+//         case "99895":
+//         case "99893":
 //             operator = "Ucell";
 //             break;   
-//         case "96":
-//         case "99":
+//         case "99896":
+//         case "99899":
 //             operator = "Uzmobile";
 //             break;
-//         case "88":
-//         case "97":
+//         case "99888":
+//         case "99897":
 //             operator ="Mobiuz";
 //             break;            
 //         default:
@@ -70,6 +74,6 @@
 //     }
 //     return operator;
 // }
-// let raqam_kod = prompt("Telefon raqam kodini kiriting (masalan, 90, 91, 99): ");
+// let raqam_kod = prompt("Telefon raqam kodini kiriting (+ ni kiritish shart emas): ");
 // console.log("Telefon operatori:", operator_aniqla(raqam_kod));
 
