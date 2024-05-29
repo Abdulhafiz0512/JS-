@@ -1,6 +1,6 @@
 body{
     display: flex;
-    flex-direction: column;
+    gap: 100px;
 }
 .countdown{
     
@@ -11,4 +11,8 @@ body{
     background-color: aqua;
     width: fit-content;
     padding: 30px;
+}
+.clock{
+    display: flex;
+    flex-direction: column;
 }

@@ -3,6 +3,8 @@
   time.style.fontSize = "32px";
   let sana = document.getElementById("sana");
   time.style.fontSize ="28px";
+  let vaqt = document.getElementById("vaqt");
+  vaqt.style.fontSize ="32px";
    
   setInterval(function () {
     let my_birthday = new Date('2025,05,12')
@@ -62,9 +64,21 @@
       left_hours='0'+left_hours;
     }
     
+    if (seconds<10){
+      seconds='0'+seconds;
+    }
+    if (minutes<10){
+      minutes='0'+minutes;
+    }
+    if (hours<10){
+      hours='0'+hours;
+    }
+    
     time.textContent = ` ${left_days} days ${left_hours} hours ${left_minutes} minutes ${left_seconds} seconds`;
 
     sana.textContent = `Bugun ${kunlari[hafta]}, ${kun}-${months[mon]}, ${year}-yil`
+    vaqt.textContent =`${hours}:${minutes}:${seconds}`
+
   },1000);
 
 })();
