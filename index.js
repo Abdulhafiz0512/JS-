@@ -1,92 +1,74 @@
-//for1
-// a=prompt("Enter k: ")*1;
-// b=prompt("Enter n: ")*1;
-// for (let i = 0; i < b; i++) {
-//     console.log(k);
-// }
+(function () {
+  let time = document.getElementById("time");
+  time.style.fontSize = "32px";
+  let sana = document.getElementById("sana");
+  time.style.fontSize ="28px";
+   
+  setInterval(function () {
+    let my_birthday = new Date('2025,05,12')
+    let date = new Date();
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    let kun = date.getDate();
+    let year = date.getFullYear();
+    let hafta =date.getDay();
+    let mon =date.getMonth();
+    let months=[
+      'yanvar',
+      'fevral',
+      'mart',
+      'aprel',
+      'may',
+      'iyun',
+      'iyul',
+      'avgust',
+      'sentyabr',
+       'oktyabr',
+       'noyabr',
+       'dekabr' 
 
-
-//for2
-// a=prompt("a soni: ");
-// b=prompt("b soni: ");
-// let count = 0; 
+    ]
+    let kunlari =[
+      'dushanba',
+      'seshanba',
+      'chorshanba',
+      'payshanba',
+      'juma',
+      'shanba',
+      'yakshanba'
+    ]
     
-// console.log(  a + " va " + b + " orasidagi sonlar:");
-// for (let i = a; i <= b; i++) {
-//     console.log(i);
-//     count++;
-//  }
-// console.log("Jami sonlar: " + count);
+    let left =my_birthday-date
+    console.log(left)
+    let left_miliseconds = left%1000
+    left = (left-left_miliseconds)/ 1000
+    let left_seconds = left%60
+    left = (left-left_seconds)/60
+    let left_minutes = left %60
+    left = (left-left_minutes)/60
+    let left_hours = left%24
+    left = (left-left_hours)/24
+    let left_days = left%365
+    
 
-//for3
-// a=prompt("a soni: ");
-// b=prompt("b soni: ");
-// let count = 0; 
-// for (let i = b - 1; i > a; i--) {
-//     console.log(i);
-//     count++;
-//     }
-// console.log("Jami sonlar: " + count);
+    if (left_seconds<10){
+      left_seconds='0'+left_seconds;
+    }
+    if (left_minutes<10){
+      left_minutes='0'+left_minutes;
+    }
+    if (left_hours<10){
+      left_hours='0'+left_hours;
+    }
+    
+    time.textContent = ` ${left_days} days ${left_hours} hours ${left_minutes} minutes ${left_seconds} seconds`;
 
-//for4
-// narx=prompt("Konfet narxi: ");
-// console.log("Konfet narxlari: ");
-// for (let i = 1; i <= 10; i++) {
-//     const umumiynarx = narx * i;
-//     console.log(i + " kg: " + umumiynarx);
-// }
+    sana.textContent = `Bugun ${kunlari[hafta]}, ${kun}-${months[mon]}, ${year}-yil`
+  },1000);
 
-//for5
-// narx=prompt("Konfet narxi: ");
-// console.log("Konfet narxlari: ");
-// for (let i = 1; i <= 10; i++) {
-//     const weight = i / 10; 
-//     const umumiynarx = narx * weight;
-//     console.log(weight + " kg: " + umumiynarx);
-// }
-
-//for6
-// narx=prompt("Konfet narxi: ");
-// console.log("Konfet narxlari: ");
-// for (let i = 12; i <= 20; i += 2) {
-//     const weight = i / 10; 
-//     const umumiynarx = narx * weight;
-//     console.log(weight + " kg: " + umumiynarx);
-// }
-
-//for7
-// a=prompt("a soni: ")*1;
-// b=prompt("b soni: ")*1;
-// let sum = 0;
-// for (let i = a; i <= b; i++) {
-//     sum += i;
-// }
-// console.log("Natija: "+sum);
-
-//for8
-// a=prompt("a soni: ")*1;
-// b=prompt("b soni: ")*1;
-// let product = 1;
-// for (let i = a; i <= b; i++) {
-//     product *= i;
-// }
-// console.log("Natija: "+product);
-
-//for9
-// a=prompt("a soni: ")*1;
-// b=prompt("b soni: ")*1;
-// let sum = 0;
-// for (let i = a; i <= b; i++) {
-//     sum += i * i;
-// }
-// console.log("Natija: "+sum);
-
-//for10
-// n=prompt("n soni: ")*1;
-// let sum = 0;
-// for (let i = 1; i <= n; i++) {
-//     sum += 1/i;
-// }
-// console.log("Natija: "+sum);
+})();
 
 
+// 123 days 4 hours 56 minutes 23 seconds left
+ 

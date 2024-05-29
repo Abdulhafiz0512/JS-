@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.countdown{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aqua;
+    width: fit-content;
+    padding: 30px;
+}
